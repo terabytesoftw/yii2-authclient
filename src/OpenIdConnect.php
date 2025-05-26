@@ -342,9 +342,7 @@ class OpenIdConnect extends OAuth2
             }
         } else {
             $accessToken = $this->accessToken;
-            if ($accessToken !== null) {
-                $idToken = $accessToken->getParam('id_token');
-            }
+            $idToken = $accessToken->getParam('id_token');
         }
 
         $idTokenData = [];
